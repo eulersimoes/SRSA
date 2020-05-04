@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="planeinfoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="planeinfoModelStoreContainer">
+          <EntitySet Name="BATTERY" EntityType="planeinfoModel.Store.BATTERY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ENGINE" EntityType="planeinfoModel.Store.ENGINE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ESC" EntityType="planeinfoModel.Store.ESC" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FLIGHT" EntityType="planeinfoModel.Store.FLIGHT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FLIGHT_DATA" EntityType="planeinfoModel.Store.FLIGHT_DATA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PLANE" EntityType="planeinfoModel.Store.PLANE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PLANE_CONFIG" EntityType="planeinfoModel.Store.PLANE_CONFIG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RADIO" EntityType="planeinfoModel.Store.RADIO" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_FLIGHT_DATA_FLIGHT" Association="planeinfoModel.Store.FK_FLIGHT_DATA_FLIGHT">
+            <End Role="FLIGHT" EntitySet="FLIGHT" />
+            <End Role="FLIGHT_DATA" EntitySet="FLIGHT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FLIGHT_PLANE_CONFIG" Association="planeinfoModel.Store.FK_FLIGHT_PLANE_CONFIG">
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+            <End Role="FLIGHT" EntitySet="FLIGHT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_BATTERY" Association="planeinfoModel.Store.FK_PLANE_CONFIG_BATTERY">
+            <End Role="BATTERY" EntitySet="BATTERY" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_ENGINE" Association="planeinfoModel.Store.FK_PLANE_CONFIG_ENGINE">
+            <End Role="ENGINE" EntitySet="ENGINE" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_ESC" Association="planeinfoModel.Store.FK_PLANE_CONFIG_ESC">
+            <End Role="ESC" EntitySet="ESC" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_PLANE" Association="planeinfoModel.Store.FK_PLANE_CONFIG_PLANE">
+            <End Role="PLANE" EntitySet="PLANE" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_RADIO" Association="planeinfoModel.Store.FK_PLANE_CONFIG_RADIO">
+            <End Role="RADIO" EntitySet="RADIO" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BATTERY">
+          <Key>
+            <PropertyRef Name="ID_BATTERY" />
+          </Key>
+          <Property Name="ID_BATTERY" Type="int" Nullable="false" />
+          <Property Name="DESC" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CAPACITY_MHA" Type="int" Nullable="false" />
+          <Property Name="CELLS" Type="int" Nullable="false" />
+          <Property Name="NETDUINO_CORRECT_FACTOR" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="VOLTS" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="ENGINE">
+          <Key>
+            <PropertyRef Name="ID_ENGINE" />
+          </Key>
+          <Property Name="ID_ENGINE" Type="int" Nullable="false" />
+          <Property Name="DESC" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="KV" Type="int" />
+        </EntityType>
+        <EntityType Name="ESC">
+          <Key>
+            <PropertyRef Name="ID_ESC" />
+          </Key>
+          <Property Name="ID_ESC" Type="int" Nullable="false" />
+          <Property Name="DESC" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AMPER" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FLIGHT">
+          <Key>
+            <PropertyRef Name="ID_FLIGHT" />
+          </Key>
+          <Property Name="ID_FLIGHT" Type="int" Nullable="false" />
+          <Property Name="DT_FLIGHT" Type="datetime" Nullable="false" />
+          <Property Name="DESC" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DT_START" Type="datetime" Nullable="false" />
+          <Property Name="DT_END" Type="datetime" Nullable="false" />
+          <Property Name="ID_CONFIG" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FLIGHT_DATA">
+          <Key>
+            <PropertyRef Name="SEQ" />
+          </Key>
+          <Property Name="SEQ" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DATE_REG" Type="datetime" Nullable="false" />
+          <Property Name="VELOCIDADE" Type="decimal" Scale="2" />
+          <Property Name="BATTERY_LEVEL" Type="int" />
+          <Property Name="ALTITUDE" Type="decimal" Scale="2" />
+          <Property Name="LATITUDE" Type="decimal" Scale="7" />
+          <Property Name="LONGITUDE" Type="decimal" Scale="7" />
+          <Property Name="AOA" Type="int" />
+          <Property Name="RA" Type="int" />
+          <Property Name="ID_FLIGHT" Type="int" Nullable="false" />
+          <Property Name="HDG" Type="int" />
+          <Property Name="FUEL_LEVEL" Type="int" />
+          <Property Name="AUTOPILOT" Type="nchar" MaxLength="10" />
+          <Property Name="PROXIMO_WAY_POINT" Type="int" />
+        </EntityType>
+        <EntityType Name="PLANE">
+          <Key>
+            <PropertyRef Name="ID_PLANE" />
+          </Key>
+          <Property Name="ID_PLANE" Type="int" Nullable="false" />
+          <Property Name="DESC" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PLANE_CONFIG">
+          <Key>
+            <PropertyRef Name="ID_CONFIG" />
+          </Key>
+          <Property Name="ID_CONFIG" Type="int" Nullable="false" />
+          <Property Name="ID_PLANE" Type="int" Nullable="false" />
+          <Property Name="ID_BATTERY" Type="int" Nullable="false" />
+          <Property Name="ID_ENGINE" Type="int" Nullable="false" />
+          <Property Name="ID_ESC" Type="int" Nullable="false" />
+          <Property Name="ID_RADIO" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RADIO">
+          <Key>
+            <PropertyRef Name="ID_RADIO" />
+          </Key>
+          <Property Name="ID_RADIO" Type="int" Nullable="false" />
+          <Property Name="DESC" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_FLIGHT_DATA_FLIGHT">
+          <End Role="FLIGHT" Type="planeinfoModel.Store.FLIGHT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="FLIGHT_DATA" Type="planeinfoModel.Store.FLIGHT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FLIGHT">
+              <PropertyRef Name="ID_FLIGHT" />
+            </Principal>
+            <Dependent Role="FLIGHT_DATA">
+              <PropertyRef Name="ID_FLIGHT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FLIGHT_PLANE_CONFIG">
+          <End Role="PLANE_CONFIG" Type="planeinfoModel.Store.PLANE_CONFIG" Multiplicity="1" />
+          <End Role="FLIGHT" Type="planeinfoModel.Store.FLIGHT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_CONFIG" />
+            </Principal>
+            <Dependent Role="FLIGHT">
+              <PropertyRef Name="ID_CONFIG" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_BATTERY">
+          <End Role="BATTERY" Type="planeinfoModel.Store.BATTERY" Multiplicity="1" />
+          <End Role="PLANE_CONFIG" Type="planeinfoModel.Store.PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BATTERY">
+              <PropertyRef Name="ID_BATTERY" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_BATTERY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_ENGINE">
+          <End Role="ENGINE" Type="planeinfoModel.Store.ENGINE" Multiplicity="1" />
+          <End Role="PLANE_CONFIG" Type="planeinfoModel.Store.PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ENGINE">
+              <PropertyRef Name="ID_ENGINE" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_ENGINE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_ESC">
+          <End Role="ESC" Type="planeinfoModel.Store.ESC" Multiplicity="1" />
+          <End Role="PLANE_CONFIG" Type="planeinfoModel.Store.PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ESC">
+              <PropertyRef Name="ID_ESC" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_ESC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_PLANE">
+          <End Role="PLANE" Type="planeinfoModel.Store.PLANE" Multiplicity="1" />
+          <End Role="PLANE_CONFIG" Type="planeinfoModel.Store.PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLANE">
+              <PropertyRef Name="ID_PLANE" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_PLANE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_RADIO">
+          <End Role="RADIO" Type="planeinfoModel.Store.RADIO" Multiplicity="1" />
+          <End Role="PLANE_CONFIG" Type="planeinfoModel.Store.PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RADIO">
+              <PropertyRef Name="ID_RADIO" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_RADIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="planeinfoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="planeinfoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BATTERY" EntityType="planeinfoModel.BATTERY" />
+          <EntitySet Name="ENGINE" EntityType="planeinfoModel.ENGINE" />
+          <EntitySet Name="ESC" EntityType="planeinfoModel.ESC" />
+          <EntitySet Name="FLIGHT" EntityType="planeinfoModel.FLIGHT" />
+          <EntitySet Name="FLIGHT_DATA" EntityType="planeinfoModel.FLIGHT_DATA" />
+          <EntitySet Name="PLANE" EntityType="planeinfoModel.PLANE" />
+          <EntitySet Name="PLANE_CONFIG" EntityType="planeinfoModel.PLANE_CONFIG" />
+          <EntitySet Name="RADIO" EntityType="planeinfoModel.RADIO" />
+          <AssociationSet Name="FK_PLANE_CONFIG_BATTERY" Association="planeinfoModel.FK_PLANE_CONFIG_BATTERY">
+            <End Role="BATTERY" EntitySet="BATTERY" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_ENGINE" Association="planeinfoModel.FK_PLANE_CONFIG_ENGINE">
+            <End Role="ENGINE" EntitySet="ENGINE" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_ESC" Association="planeinfoModel.FK_PLANE_CONFIG_ESC">
+            <End Role="ESC" EntitySet="ESC" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FLIGHT_DATA_FLIGHT" Association="planeinfoModel.FK_FLIGHT_DATA_FLIGHT">
+            <End Role="FLIGHT" EntitySet="FLIGHT" />
+            <End Role="FLIGHT_DATA" EntitySet="FLIGHT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FLIGHT_PLANE_CONFIG" Association="planeinfoModel.FK_FLIGHT_PLANE_CONFIG">
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+            <End Role="FLIGHT" EntitySet="FLIGHT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_PLANE" Association="planeinfoModel.FK_PLANE_CONFIG_PLANE">
+            <End Role="PLANE" EntitySet="PLANE" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLANE_CONFIG_RADIO" Association="planeinfoModel.FK_PLANE_CONFIG_RADIO">
+            <End Role="RADIO" EntitySet="RADIO" />
+            <End Role="PLANE_CONFIG" EntitySet="PLANE_CONFIG" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BATTERY">
+          <Key>
+            <PropertyRef Name="ID_BATTERY" />
+          </Key>
+          <Property Type="Int32" Name="ID_BATTERY" Nullable="false" />
+          <Property Type="String" Name="DESC" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CAPACITY_MHA" Nullable="false" />
+          <Property Type="Int32" Name="CELLS" Nullable="false" />
+          <Property Type="Decimal" Name="NETDUINO_CORRECT_FACTOR" Precision="10" Scale="2" />
+          <Property Type="Decimal" Name="VOLTS" Precision="10" Scale="2" />
+          <NavigationProperty Name="PLANE_CONFIG" Relationship="planeinfoModel.FK_PLANE_CONFIG_BATTERY" FromRole="BATTERY" ToRole="PLANE_CONFIG" />
+        </EntityType>
+        <EntityType Name="ENGINE">
+          <Key>
+            <PropertyRef Name="ID_ENGINE" />
+          </Key>
+          <Property Type="Int32" Name="ID_ENGINE" Nullable="false" />
+          <Property Type="String" Name="DESC" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="KV" />
+          <NavigationProperty Name="PLANE_CONFIG" Relationship="planeinfoModel.FK_PLANE_CONFIG_ENGINE" FromRole="ENGINE" ToRole="PLANE_CONFIG" />
+        </EntityType>
+        <EntityType Name="ESC">
+          <Key>
+            <PropertyRef Name="ID_ESC" />
+          </Key>
+          <Property Type="Int32" Name="ID_ESC" Nullable="false" />
+          <Property Type="String" Name="DESC" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="AMPER" Nullable="false" />
+          <NavigationProperty Name="PLANE_CONFIG" Relationship="planeinfoModel.FK_PLANE_CONFIG_ESC" FromRole="ESC" ToRole="PLANE_CONFIG" />
+        </EntityType>
+        <EntityType Name="FLIGHT">
+          <Key>
+            <PropertyRef Name="ID_FLIGHT" />
+          </Key>
+          <Property Type="Int32" Name="ID_FLIGHT" Nullable="false" />
+          <Property Type="DateTime" Name="DT_FLIGHT" Nullable="false" />
+          <Property Type="String" Name="DESC" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DT_START" Nullable="false" />
+          <Property Type="DateTime" Name="DT_END" Nullable="false" />
+          <Property Type="Int32" Name="ID_CONFIG" Nullable="false" />
+          <NavigationProperty Name="FLIGHT_DATA" Relationship="planeinfoModel.FK_FLIGHT_DATA_FLIGHT" FromRole="FLIGHT" ToRole="FLIGHT_DATA" />
+          <NavigationProperty Name="PLANE_CONFIG" Relationship="planeinfoModel.FK_FLIGHT_PLANE_CONFIG" FromRole="FLIGHT" ToRole="PLANE_CONFIG" />
+        </EntityType>
+        <EntityType Name="FLIGHT_DATA">
+          <Key>
+            <PropertyRef Name="SEQ" />
+          </Key>
+          <Property Type="Int32" Name="SEQ" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="DATE_REG" Nullable="false" />
+          <Property Type="Decimal" Name="VELOCIDADE" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="BATTERY_LEVEL" />
+          <Property Type="Decimal" Name="ALTITUDE" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="LATITUDE" Precision="18" Scale="7" />
+          <Property Type="Decimal" Name="LONGITUDE" Precision="18" Scale="7" />
+          <Property Type="Int32" Name="AOA" />
+          <Property Type="Int32" Name="RA" />
+          <Property Type="Int32" Name="ID_FLIGHT" Nullable="false" />
+          <Property Type="Int32" Name="HDG" />
+          <Property Type="Int32" Name="FUEL_LEVEL" />
+          <Property Type="String" Name="AUTOPILOT" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="PROXIMO_WAY_POINT" />
+          <NavigationProperty Name="FLIGHT" Relationship="planeinfoModel.FK_FLIGHT_DATA_FLIGHT" FromRole="FLIGHT_DATA" ToRole="FLIGHT" />
+        </EntityType>
+        <EntityType Name="PLANE">
+          <Key>
+            <PropertyRef Name="ID_PLANE" />
+          </Key>
+          <Property Type="Int32" Name="ID_PLANE" Nullable="false" />
+          <Property Type="String" Name="DESC" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PLANE_CONFIG" Relationship="planeinfoModel.FK_PLANE_CONFIG_PLANE" FromRole="PLANE" ToRole="PLANE_CONFIG" />
+        </EntityType>
+        <EntityType Name="PLANE_CONFIG">
+          <Key>
+            <PropertyRef Name="ID_CONFIG" />
+          </Key>
+          <Property Type="Int32" Name="ID_CONFIG" Nullable="false" />
+          <Property Type="Int32" Name="ID_PLANE" Nullable="false" />
+          <Property Type="Int32" Name="ID_BATTERY" Nullable="false" />
+          <Property Type="Int32" Name="ID_ENGINE" Nullable="false" />
+          <Property Type="Int32" Name="ID_ESC" Nullable="false" />
+          <Property Type="Int32" Name="ID_RADIO" Nullable="false" />
+          <NavigationProperty Name="BATTERY" Relationship="planeinfoModel.FK_PLANE_CONFIG_BATTERY" FromRole="PLANE_CONFIG" ToRole="BATTERY" />
+          <NavigationProperty Name="ENGINE" Relationship="planeinfoModel.FK_PLANE_CONFIG_ENGINE" FromRole="PLANE_CONFIG" ToRole="ENGINE" />
+          <NavigationProperty Name="ESC" Relationship="planeinfoModel.FK_PLANE_CONFIG_ESC" FromRole="PLANE_CONFIG" ToRole="ESC" />
+          <NavigationProperty Name="FLIGHT" Relationship="planeinfoModel.FK_FLIGHT_PLANE_CONFIG" FromRole="PLANE_CONFIG" ToRole="FLIGHT" />
+          <NavigationProperty Name="PLANE" Relationship="planeinfoModel.FK_PLANE_CONFIG_PLANE" FromRole="PLANE_CONFIG" ToRole="PLANE" />
+          <NavigationProperty Name="RADIO" Relationship="planeinfoModel.FK_PLANE_CONFIG_RADIO" FromRole="PLANE_CONFIG" ToRole="RADIO" />
+        </EntityType>
+        <EntityType Name="RADIO">
+          <Key>
+            <PropertyRef Name="ID_RADIO" />
+          </Key>
+          <Property Type="Int32" Name="ID_RADIO" Nullable="false" />
+          <Property Type="String" Name="DESC" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PLANE_CONFIG" Relationship="planeinfoModel.FK_PLANE_CONFIG_RADIO" FromRole="RADIO" ToRole="PLANE_CONFIG" />
+        </EntityType>
+        <Association Name="FK_PLANE_CONFIG_BATTERY">
+          <End Type="planeinfoModel.BATTERY" Role="BATTERY" Multiplicity="1" />
+          <End Type="planeinfoModel.PLANE_CONFIG" Role="PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BATTERY">
+              <PropertyRef Name="ID_BATTERY" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_BATTERY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_ENGINE">
+          <End Type="planeinfoModel.ENGINE" Role="ENGINE" Multiplicity="1" />
+          <End Type="planeinfoModel.PLANE_CONFIG" Role="PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ENGINE">
+              <PropertyRef Name="ID_ENGINE" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_ENGINE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_ESC">
+          <End Type="planeinfoModel.ESC" Role="ESC" Multiplicity="1" />
+          <End Type="planeinfoModel.PLANE_CONFIG" Role="PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ESC">
+              <PropertyRef Name="ID_ESC" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_ESC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FLIGHT_DATA_FLIGHT">
+          <End Type="planeinfoModel.FLIGHT" Role="FLIGHT" Multiplicity="1" />
+          <End Type="planeinfoModel.FLIGHT_DATA" Role="FLIGHT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FLIGHT">
+              <PropertyRef Name="ID_FLIGHT" />
+            </Principal>
+            <Dependent Role="FLIGHT_DATA">
+              <PropertyRef Name="ID_FLIGHT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FLIGHT_PLANE_CONFIG">
+          <End Type="planeinfoModel.PLANE_CONFIG" Role="PLANE_CONFIG" Multiplicity="1" />
+          <End Type="planeinfoModel.FLIGHT" Role="FLIGHT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_CONFIG" />
+            </Principal>
+            <Dependent Role="FLIGHT">
+              <PropertyRef Name="ID_CONFIG" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_PLANE">
+          <End Type="planeinfoModel.PLANE" Role="PLANE" Multiplicity="1" />
+          <End Type="planeinfoModel.PLANE_CONFIG" Role="PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLANE">
+              <PropertyRef Name="ID_PLANE" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_PLANE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLANE_CONFIG_RADIO">
+          <End Type="planeinfoModel.RADIO" Role="RADIO" Multiplicity="1" />
+          <End Type="planeinfoModel.PLANE_CONFIG" Role="PLANE_CONFIG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RADIO">
+              <PropertyRef Name="ID_RADIO" />
+            </Principal>
+            <Dependent Role="PLANE_CONFIG">
+              <PropertyRef Name="ID_RADIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="planeinfoModelStoreContainer" CdmEntityContainer="planeinfoEntities">
+          <EntitySetMapping Name="BATTERY">
+            <EntityTypeMapping TypeName="planeinfoModel.BATTERY">
+              <MappingFragment StoreEntitySet="BATTERY">
+                <ScalarProperty Name="VOLTS" ColumnName="VOLTS" />
+                <ScalarProperty Name="NETDUINO_CORRECT_FACTOR" ColumnName="NETDUINO_CORRECT_FACTOR" />
+                <ScalarProperty Name="CELLS" ColumnName="CELLS" />
+                <ScalarProperty Name="CAPACITY_MHA" ColumnName="CAPACITY_MHA" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="ID_BATTERY" ColumnName="ID_BATTERY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ENGINE">
+            <EntityTypeMapping TypeName="planeinfoModel.ENGINE">
+              <MappingFragment StoreEntitySet="ENGINE">
+                <ScalarProperty Name="KV" ColumnName="KV" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="ID_ENGINE" ColumnName="ID_ENGINE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ESC">
+            <EntityTypeMapping TypeName="planeinfoModel.ESC">
+              <MappingFragment StoreEntitySet="ESC">
+                <ScalarProperty Name="AMPER" ColumnName="AMPER" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="ID_ESC" ColumnName="ID_ESC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FLIGHT">
+            <EntityTypeMapping TypeName="planeinfoModel.FLIGHT">
+              <MappingFragment StoreEntitySet="FLIGHT">
+                <ScalarProperty Name="ID_CONFIG" ColumnName="ID_CONFIG" />
+                <ScalarProperty Name="DT_END" ColumnName="DT_END" />
+                <ScalarProperty Name="DT_START" ColumnName="DT_START" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="DT_FLIGHT" ColumnName="DT_FLIGHT" />
+                <ScalarProperty Name="ID_FLIGHT" ColumnName="ID_FLIGHT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FLIGHT_DATA">
+            <EntityTypeMapping TypeName="planeinfoModel.FLIGHT_DATA">
+              <MappingFragment StoreEntitySet="FLIGHT_DATA">
+                <ScalarProperty Name="PROXIMO_WAY_POINT" ColumnName="PROXIMO_WAY_POINT" />
+                <ScalarProperty Name="AUTOPILOT" ColumnName="AUTOPILOT" />
+                <ScalarProperty Name="FUEL_LEVEL" ColumnName="FUEL_LEVEL" />
+                <ScalarProperty Name="HDG" ColumnName="HDG" />
+                <ScalarProperty Name="ID_FLIGHT" ColumnName="ID_FLIGHT" />
+                <ScalarProperty Name="RA" ColumnName="RA" />
+                <ScalarProperty Name="AOA" ColumnName="AOA" />
+                <ScalarProperty Name="LONGITUDE" ColumnName="LONGITUDE" />
+                <ScalarProperty Name="LATITUDE" ColumnName="LATITUDE" />
+                <ScalarProperty Name="ALTITUDE" ColumnName="ALTITUDE" />
+                <ScalarProperty Name="BATTERY_LEVEL" ColumnName="BATTERY_LEVEL" />
+                <ScalarProperty Name="VELOCIDADE" ColumnName="VELOCIDADE" />
+                <ScalarProperty Name="DATE_REG" ColumnName="DATE_REG" />
+                <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PLANE">
+            <EntityTypeMapping TypeName="planeinfoModel.PLANE">
+              <MappingFragment StoreEntitySet="PLANE">
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="ID_PLANE" ColumnName="ID_PLANE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PLANE_CONFIG">
+            <EntityTypeMapping TypeName="planeinfoModel.PLANE_CONFIG">
+              <MappingFragment StoreEntitySet="PLANE_CONFIG">
+                <ScalarProperty Name="ID_RADIO" ColumnName="ID_RADIO" />
+                <ScalarProperty Name="ID_ESC" ColumnName="ID_ESC" />
+                <ScalarProperty Name="ID_ENGINE" ColumnName="ID_ENGINE" />
+                <ScalarProperty Name="ID_BATTERY" ColumnName="ID_BATTERY" />
+                <ScalarProperty Name="ID_PLANE" ColumnName="ID_PLANE" />
+                <ScalarProperty Name="ID_CONFIG" ColumnName="ID_CONFIG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RADIO">
+            <EntityTypeMapping TypeName="planeinfoModel.RADIO">
+              <MappingFragment StoreEntitySet="RADIO">
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="ID_RADIO" ColumnName="ID_RADIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="planeinfoModel.BATTERY" Width="1.5" PointX="0.75" PointY="1.75" Height="2.3648893229166656" />
+        <EntityTypeShape EntityType="planeinfoModel.ENGINE" Width="1.5" PointX="0.75" PointY="5.5" Height="1.7879850260416657" />
+        <EntityTypeShape EntityType="planeinfoModel.ESC" Width="1.5" PointX="0.75" PointY="8" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="planeinfoModel.FLIGHT" Width="1.5" PointX="5.25" PointY="1.75" Height="2.5571907552083331" />
+        <EntityTypeShape EntityType="planeinfoModel.FLIGHT_DATA" Width="1.5" PointX="7.5" PointY="1" Height="3.9033007812499996" />
+        <EntityTypeShape EntityType="planeinfoModel.PLANE" Width="1.5" PointX="0.75" PointY="10.625" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="planeinfoModel.PLANE_CONFIG" Width="1.5" PointX="3" PointY="1.25" Height="3.3263964843749996" />
+        <EntityTypeShape EntityType="planeinfoModel.RADIO" Width="1.5" PointX="0.75" PointY="12.875" Height="1.5956835937499996" />
+        <AssociationConnector Association="planeinfoModel.FK_PLANE_CONFIG_BATTERY" >
+          <ConnectorPoint PointX="2.25" PointY="2.9324446614583328" />
+          <ConnectorPoint PointX="3" PointY="2.9324446614583328" />
+        </AssociationConnector>
+        <AssociationConnector Association="planeinfoModel.FK_PLANE_CONFIG_ENGINE" >
+          <ConnectorPoint PointX="2.25" PointY="6.3939925130208328" />
+          <ConnectorPoint PointX="3.0572879166666667" PointY="6.3939925130208319" />
+          <ConnectorPoint PointX="3.2239545833333336" PointY="6.3939925130208328" />
+          <ConnectorPoint PointX="3.2604141666666666" PointY="6.3939925130208319" />
+          <ConnectorPoint PointX="3.4270808333333336" PointY="6.3939925130208328" />
+          <ConnectorPoint PointX="3.75" PointY="6.3939925130208328" />
+          <ConnectorPoint PointX="3.75" PointY="4.576396484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="planeinfoModel.FK_PLANE_CONFIG_ESC" >
+          <ConnectorPoint PointX="2.25" PointY="8.8939925130208337" />
+          <ConnectorPoint PointX="3.0572879166666667" PointY="8.8939925130208337" />
+          <ConnectorPoint PointX="3.2239545833333336" PointY="8.8939925130208337" />
+          <ConnectorPoint PointX="3.3437475" PointY="8.8939925130208337" />
+          <ConnectorPoint PointX="3.3437475" PointY="4.576396484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="planeinfoModel.FK_FLIGHT_DATA_FLIGHT" >
+          <ConnectorPoint PointX="6.75" PointY="3.0285953776041667" />
+          <ConnectorPoint PointX="7.5" PointY="3.0285953776041667" />
+        </AssociationConnector>
+        <AssociationConnector Association="planeinfoModel.FK_FLIGHT_PLANE_CONFIG" >
+          <ConnectorPoint PointX="4.5" PointY="3.0285953776041667" />
+          <ConnectorPoint PointX="5.25" PointY="3.0285953776041667" />
+        </AssociationConnector>
+        <AssociationConnector Association="planeinfoModel.FK_PLANE_CONFIG_PLANE" >
+          <ConnectorPoint PointX="2.25" PointY="11.422841796875" />
+          <ConnectorPoint PointX="3.0572879166666667" PointY="11.422841796875" />
+          <ConnectorPoint PointX="3.2239545833333336" PointY="11.422841796875" />
+          <ConnectorPoint PointX="4.1562525" PointY="11.422841796875" />
+          <ConnectorPoint PointX="4.1562525" PointY="4.576396484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="planeinfoModel.FK_PLANE_CONFIG_RADIO" >
+          <ConnectorPoint PointX="2.25" PointY="13.672841796875" />
+          <ConnectorPoint PointX="3.14062125" PointY="13.672841796875" />
+          <ConnectorPoint PointX="3.14062125" PointY="4.576396484375" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

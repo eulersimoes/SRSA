@@ -1,0 +1,4 @@
+C:\Projetos\SRSA_MOCKUP\SerialCommTeste\bin\Debug\SerialCommTeste.exe
+C:\Projetos\SRSA_MOCKUP\SerialCommTeste\bin\Debug\SerialCommTeste.pdb
+C:\Projetos\SRSA_MOCKUP\SerialCommTeste\obj\x86\Debug\SerialCommTeste.exe
+C:\Projetos\SRSA_MOCKUP\SerialCommTeste\obj\x86\Debug\SerialCommTeste.pdb

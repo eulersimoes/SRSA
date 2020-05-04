@@ -1,0 +1,6 @@
+C:\Projetos\SRSA_MOCKUP\BANCO\bin\Debug\BANCO.dll.config
+C:\Projetos\SRSA_MOCKUP\BANCO\bin\Debug\BANCO.dll
+C:\Projetos\SRSA_MOCKUP\BANCO\bin\Debug\BANCO.pdb
+C:\Projetos\SRSA_MOCKUP\BANCO\obj\Debug\BANCO.dll
+C:\Projetos\SRSA_MOCKUP\BANCO\obj\Debug\BANCO.pdb
+C:\Projetos\SRSA_MOCKUP\BANCO\obj\Debug\BANCO.csprojResolveAssemblyReference.cache

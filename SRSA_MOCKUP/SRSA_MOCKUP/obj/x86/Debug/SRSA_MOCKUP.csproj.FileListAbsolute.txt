@@ -1,0 +1,27 @@
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\SRSA_MOCKUP.exe
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\SRSA_MOCKUP.pdb
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\SRSA_MOCKUP.Form1.resources
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\SRSA_MOCKUP.Properties.Resources.resources
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\SRSA_MOCKUP.exe
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\SRSA_MOCKUP.pdb
+d:\documents and settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\VERTICAL_PROGRESS_BAR.dll
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\VERTICAL_PROGRESS_BAR.pdb
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\VERTICAL_PROGRESS_BAR.xml
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\SRSA_MOCKUP.exe
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\SRSA_MOCKUP.pdb
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\CaptureCam.dll
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\VERTICAL_PROGRESS_BAR.dll
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\VERTICAL_PROGRESS_BAR.pdb
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\VERTICAL_PROGRESS_BAR.xml
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Debug\CaptureCam.pdb
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\AvionicsInstrumentsControls.Form1.resources
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\AvionicsInstrumentsControls.Properties.Resources.resources
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\SRSA_MOCKUP.exe
+C:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Debug\SRSA_MOCKUP.pdb

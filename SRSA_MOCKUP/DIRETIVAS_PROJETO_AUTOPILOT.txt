@@ -1,0 +1,156 @@
+
+            //MAPEAMENTO DOS CANAIS:
+            //1RX -> 4 NETDUINO (Aleron)
+            //2RX -> 7 NETDUINO (Elev)
+            //3RX -> 10 NETDUINO  (Power)
+            //5RX -> 8 NETDUINO  (Rudder)
+
+            servoAlerion = new Servo(Pins.GPIO_PIN_D5);
+            servoElevetor = new Servo(Pins.GPIO_PIN_D9);
+            servoPower = new Servo(Pins.GPIO_PIN_D10);
+
+addposgps-lat1000100010100-long100010001001
+-----------HADWARE-------------------------
+PIN(0,1): COMUNICA플O (RX/TX) com1
+PIN(2,3): GPS (RX/TX)com2
+PIN(A5,A4): ACELEROMETRO (X,Y)
+-------------------------------------------
+*******************************************
+-------------------------------------------
+NETDUINOMINI PINS:
+17-20 PWM;
+5-8: ANALOG INPUT + DIGITAL IO;
+13-20: DIGITAL IO;
+
+farol - pin13
+navlight - pin15
+strobe - pin14
+serviceLigh - pin16
+
+ACELEROMETRO: X 5, Y 6
+BATTMERTER: 7
+
+GPS: pin11,pin12 (rs232 comm)
+
+PARAMETROS DE SAIDA:
+----------------------------------------
+
+
+separadores dentro da frase:-
+separadores de frase:;
+
+POSI합ES FIXAS
+00-10: COMANDO
+11-14: VALOR NUMERICO (TRUE-FALSE)
+10-50: VALOR
+
+
+FUN합ES ENTRADA:
+AUTOPILOT VALOR (ON-OFF)
+NAVEGACAO VALOR (GPS-HDG)
+AUTITUDE VALOR
+DIRE플O VALOR (0-360)
+VOOHORIZONTAL (ON-OFF)
+VOOVERICAL (ON-OFF)
+ALTITUDE (ON-OFF)
+
+RETORNO STATUS: PLANEINFO_IDENTY;DATA;ROLL_ANGLE,PITCH_ANGLE;ALT;HDG;SPD;LAT;LONG;Throttle;FUEL;BAT;AUTOPILOT;PROXIMO_WAY_POINT
+WEBSERVICE RETORNO STATUS: DATA;ROLL_ANGLE,PITCH_ANGLE;ALT;HDG;SPD;LAT;LONG;Throttle;FUEL;BAT;AUTOPILOT;PROXIMO_WAY_POINT;DISTANCIA_CASA
+
+VALORES PARA AUTOPILOT NO BANCO: OFF,WAYPOINT, ESTAB
+
+COMANDOS:
+#ID;AUTOPILOT;ON*
+#ID;AUTOPILOT;OFF*
+
+#ID;SETAUTOPILOTMODE;NAV*
+#ID;SETAUTOPILOTMODE;ESTAB* //ESTABILIZATION
+#ID;SETAUTOPILOTMODE;HDG;120*
+#ID;SETAUTOPILOTMODE;ALT;1200*
+#ID;SETAUTOPILOTMODE;HDGALT;360;1200*
+#ID;SETNEXTWAYPOINT;WAYPID*
+
+#ID;SETTHROTTLER;100*
+#ID;SETSPEED;120*
+#ID;SETHDG;150*
+#ID;SETALT;1200*
+#ID;SETSERVOPOS;(1...12);180*  //SETA A POSI플O DO SERVO X PARA GRAUS...
+#ID;TURNLIGHTS;ON*
+
+#ID;SETSERVOALERIONRIGHTPOS;POS*
+#ID;SETSERVOALERIONLEFTPOS;POS*
+#ID;SETSERVOELEVATOR;POS*
+#ID;SETSERVOPOWER;POS*
+
+#ID;SETSTROBE;ON-OFF*
+#ID;SETNAVLIGHT;ON-OFF*
+#ID;SETFAROL;ON-OFF*
+#ID;LISTARDADOS;ON-OFF*
+  0  1          2   3   4    5
+#ID;ADDWAYPOINT;ID;LAT;LONG;ALT*
+#ID;ADDHOMEPOINT;ID;LAT;LONG;ALT*
+#ID;REMOVEWAYPOINT;ID*
+#ID;WAYPOINTINFO*
+
+#DEBUG;PITCH;ROLL;ALT;SPEED;LATITUDE;LONGITUDE*
+
+* MAXIMO DE 10 WAYPOINT PERMITIDOS
+
+*--------------------------------------
+RAWDATA:
+            String info = String.Empty;
+           0 info += "planeinfo;";
+           1 info += DateTime.Now.ToString() + ";";
+           2 info += this.RollAngle.ToString() + ";";
+           3 info += this.PitchAngle.ToString() + ";";
+           4 info += System.Math.Round(this.AltitudeMetros) + ";";
+           5 info += System.Math.Round(this.Hdg) + ";";
+           6 info += System.Math.Round(this.Velocidadeknots) + ";";
+           7 info += this.LocalizacaoAtual.Latitude.ToString() + ";";
+           8 info += this.LocalizacaoAtual.Longitude.ToString() + ";";
+           9 info += this.Throttle.ToString() + ";";
+           10 info += this.PercentualCombustivel.ToString() + ";";
+           11 info += this.PercentualBateria.ToString() + ";";
+           12 info += this.Autopilot.ToString();
+           13 info += nextWayPoint;
+           14 info += targetHdg; 
+            info += "\n";
+            return info;
+*--------------------------------------
+*--------------------------------------
+WAYPOINT:
+ String r= String.Empty;
+            //Divisor de campo: ;
+            //NovaLinha:#
+            foreach (WayPoint wayPoint in listaWayPoint)
+            {
+
+                r += wayPoint.Id;
+                r += ";";
+
+                r += wayPoint.Latitude;
+                r += ";";
+
+                r += wayPoint.Longitude;
+                r += ";";
+
+                r += wayPoint.Altitude;
+                r += ";";
+
+                r += ":";
+            }
+            r += " rawWayPoint ";
+            r += "\n";
+            return r;
+*--------------------------------------
+
+
+
+MODOS DE PILOTO AUTOMATICO:
+0: ESTABILIZAR 
+1: RETURN TO HOME
+2: WAYPOINS (N홒 IMPLEMENTADO INICIALMENTE)
+
+COMUNICA플O INTERNA ENTRE AS PLACA DATA E A PLACA NAV:
+DATA: PIN12(TX VIA SERIALSOFT)  ---> NAV: PIN 1 (RX)
+#INFO;CURRENTHDG;TARGETHDG;CURRENTALT;CURRENTSPEED;

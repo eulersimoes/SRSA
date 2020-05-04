@@ -1,0 +1,5 @@
+C:\Projetos\SRSA_MOCKUP\WebServiceArduino\bin\WebServiceArduino.dll
+C:\Projetos\SRSA_MOCKUP\WebServiceArduino\bin\WebServiceArduino.pdb
+C:\Projetos\SRSA_MOCKUP\WebServiceArduino\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\SRSA_MOCKUP\WebServiceArduino\obj\Debug\WebServiceArduino.dll
+C:\Projetos\SRSA_MOCKUP\WebServiceArduino\obj\Debug\WebServiceArduino.pdb

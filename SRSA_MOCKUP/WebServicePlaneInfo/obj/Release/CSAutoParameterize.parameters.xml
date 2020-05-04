@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="planeinfoEntities-Web.config Connection String" description="planeinfoEntities Connection String used in web.config by the application to access the database." defaultvalue="metadata=res://*/Model.csdl|res://*/Model.ssdl|res://*/Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=BLK-PC;initial catalog=planeinfo;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projetos\\SRSA_MOCKUP\\WebServicePlaneInfo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='planeinfoEntities']/@connectionString" />
+  </parameter>
+  <parameter name="BANCO.Properties.Settings.planeinfoConnectionString-Web.config Connection String" description="BANCO.Properties.Settings.planeinfoConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=BLK-PC;Initial Catalog=planeinfo;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Projetos\\SRSA_MOCKUP\\WebServicePlaneInfo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BANCO.Properties.Settings.planeinfoConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

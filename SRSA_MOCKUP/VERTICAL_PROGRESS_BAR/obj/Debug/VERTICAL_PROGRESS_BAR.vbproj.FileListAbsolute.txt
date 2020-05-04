@@ -1,0 +1,22 @@
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\bin\Debug\VERTICAL_PROGRESS_BAR.dll
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\bin\Debug\VERTICAL_PROGRESS_BAR.pdb
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\bin\Debug\VERTICAL_PROGRESS_BAR.xml
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.Resources.resources
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.dll
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.xml
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.pdb
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.VBarControl.resources
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\bin\Debug\VERTICAL_PROGRESS_BAR.dll
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\bin\Debug\VERTICAL_PROGRESS_BAR.pdb
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\bin\Debug\VERTICAL_PROGRESS_BAR.xml
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.Resources.resources
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.VBarControl.resources
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.dll
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.xml
+C:\Projetos\SRSA_MOCKUP\VERTICAL_PROGRESS_BAR\obj\Debug\VERTICAL_PROGRESS_BAR.pdb

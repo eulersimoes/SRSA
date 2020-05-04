@@ -1,0 +1,17 @@
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\le\Entity.dll
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\be\Entity.dll
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\le\Entity.pdb
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\be\Entity.pdb
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\Entity.dll
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\Entity.pdb
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\le\Entity.pe
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\le\Entity.pdbx
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\be\Entity.pe
+C:\Projetos\SRSA_NETDUINO\Entity\bin\Release\be\Entity.pdbx
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\TinyCLR_DebugReferences.cache
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\Entity.dll
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\Entity.pdb
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\be\Entity.pe
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\be\Entity.pdbx
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\le\Entity.pe
+C:\Projetos\SRSA_NETDUINO\Entity\obj\Release\le\Entity.pdbx

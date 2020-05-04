@@ -1,0 +1,8 @@
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Release\JoystickControlComponent.dll
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Release\JoystickControlComponent.pdb
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Release\JoystickControlComponent.JoyControl.resources
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Release\JoystickControlComponent.dll
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Release\JoystickControlComponent.pdb
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Release\Microsoft.Xna.Framework.dll
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Release\Microsoft.Xna.Framework.xml
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Release\JoystickControlComponent.csproj.GenerateResource.Cache

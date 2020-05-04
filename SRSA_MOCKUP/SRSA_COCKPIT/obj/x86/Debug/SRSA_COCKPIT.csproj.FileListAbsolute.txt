@@ -1,0 +1,12 @@
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\SRSA_COCKPIT.FormCockPit.resources
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\SRSA_COCKPIT.Properties.Resources.resources
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\bin\Debug\SRSA_COCKPIT.exe
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\bin\Debug\SRSA_COCKPIT.pdb
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\bin\Debug\CaptureCam.dll
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\bin\Debug\CaptureCam.pdb
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\SRSA_COCKPIT.exe
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\SRSA_COCKPIT.pdb
+C:\Projetos\SRSA_MOCKUP\SRSA_COCKPIT\obj\x86\Debug\SRSA_COCKPIT.AvionicsInstrumentsControlsRessources.resources

@@ -1,0 +1,8 @@
+D:\Projetos\SRSA_MOCKUP\JoyT\bin\Debug\JoyT.exe
+D:\Projetos\SRSA_MOCKUP\JoyT\bin\Debug\JoyT.pdb
+D:\Projetos\SRSA_MOCKUP\JoyT\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projetos\SRSA_MOCKUP\JoyT\obj\x86\Debug\JoyT.Properties.Resources.resources
+D:\Projetos\SRSA_MOCKUP\JoyT\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projetos\SRSA_MOCKUP\JoyT\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projetos\SRSA_MOCKUP\JoyT\obj\x86\Debug\JoyT.exe
+D:\Projetos\SRSA_MOCKUP\JoyT\obj\x86\Debug\JoyT.pdb

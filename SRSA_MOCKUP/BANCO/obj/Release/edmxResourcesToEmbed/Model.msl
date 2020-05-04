@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="planeinfoModelStoreContainer" CdmEntityContainer="planeinfoEntities">
+    <EntitySetMapping Name="BATTERY">
+      <EntityTypeMapping TypeName="planeinfoModel.BATTERY">
+        <MappingFragment StoreEntitySet="BATTERY">
+          <ScalarProperty Name="VOLTS" ColumnName="VOLTS" />
+          <ScalarProperty Name="NETDUINO_CORRECT_FACTOR" ColumnName="NETDUINO_CORRECT_FACTOR" />
+          <ScalarProperty Name="CELLS" ColumnName="CELLS" />
+          <ScalarProperty Name="CAPACITY_MHA" ColumnName="CAPACITY_MHA" />
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="ID_BATTERY" ColumnName="ID_BATTERY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENGINE">
+      <EntityTypeMapping TypeName="planeinfoModel.ENGINE">
+        <MappingFragment StoreEntitySet="ENGINE">
+          <ScalarProperty Name="KV" ColumnName="KV" />
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="ID_ENGINE" ColumnName="ID_ENGINE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESC">
+      <EntityTypeMapping TypeName="planeinfoModel.ESC">
+        <MappingFragment StoreEntitySet="ESC">
+          <ScalarProperty Name="AMPER" ColumnName="AMPER" />
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="ID_ESC" ColumnName="ID_ESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FLIGHT">
+      <EntityTypeMapping TypeName="planeinfoModel.FLIGHT">
+        <MappingFragment StoreEntitySet="FLIGHT">
+          <ScalarProperty Name="ID_CONFIG" ColumnName="ID_CONFIG" />
+          <ScalarProperty Name="DT_END" ColumnName="DT_END" />
+          <ScalarProperty Name="DT_START" ColumnName="DT_START" />
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="DT_FLIGHT" ColumnName="DT_FLIGHT" />
+          <ScalarProperty Name="ID_FLIGHT" ColumnName="ID_FLIGHT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FLIGHT_DATA">
+      <EntityTypeMapping TypeName="planeinfoModel.FLIGHT_DATA">
+        <MappingFragment StoreEntitySet="FLIGHT_DATA">
+          <ScalarProperty Name="PROXIMO_WAY_POINT" ColumnName="PROXIMO_WAY_POINT" />
+          <ScalarProperty Name="AUTOPILOT" ColumnName="AUTOPILOT" />
+          <ScalarProperty Name="FUEL_LEVEL" ColumnName="FUEL_LEVEL" />
+          <ScalarProperty Name="HDG" ColumnName="HDG" />
+          <ScalarProperty Name="ID_FLIGHT" ColumnName="ID_FLIGHT" />
+          <ScalarProperty Name="RA" ColumnName="RA" />
+          <ScalarProperty Name="AOA" ColumnName="AOA" />
+          <ScalarProperty Name="LONGITUDE" ColumnName="LONGITUDE" />
+          <ScalarProperty Name="LATITUDE" ColumnName="LATITUDE" />
+          <ScalarProperty Name="ALTITUDE" ColumnName="ALTITUDE" />
+          <ScalarProperty Name="BATTERY_LEVEL" ColumnName="BATTERY_LEVEL" />
+          <ScalarProperty Name="VELOCIDADE" ColumnName="VELOCIDADE" />
+          <ScalarProperty Name="DATE_REG" ColumnName="DATE_REG" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLANE">
+      <EntityTypeMapping TypeName="planeinfoModel.PLANE">
+        <MappingFragment StoreEntitySet="PLANE">
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="ID_PLANE" ColumnName="ID_PLANE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLANE_CONFIG">
+      <EntityTypeMapping TypeName="planeinfoModel.PLANE_CONFIG">
+        <MappingFragment StoreEntitySet="PLANE_CONFIG">
+          <ScalarProperty Name="ID_RADIO" ColumnName="ID_RADIO" />
+          <ScalarProperty Name="ID_ESC" ColumnName="ID_ESC" />
+          <ScalarProperty Name="ID_ENGINE" ColumnName="ID_ENGINE" />
+          <ScalarProperty Name="ID_BATTERY" ColumnName="ID_BATTERY" />
+          <ScalarProperty Name="ID_PLANE" ColumnName="ID_PLANE" />
+          <ScalarProperty Name="ID_CONFIG" ColumnName="ID_CONFIG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIO">
+      <EntityTypeMapping TypeName="planeinfoModel.RADIO">
+        <MappingFragment StoreEntitySet="RADIO">
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="ID_RADIO" ColumnName="ID_RADIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/WebServicePlaneInfo_deploy" />
+  <setParameter name="planeinfoEntities-Web.config Connection String" value="metadata=res://*/Model.csdl|res://*/Model.ssdl|res://*/Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=BLK-PC;initial catalog=planeinfo;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;" />
+  <setParameter name="BANCO.Properties.Settings.planeinfoConnectionString-Web.config Connection String" value="Data Source=BLK-PC;Initial Catalog=planeinfo;Integrated Security=True" />
+</parameters>

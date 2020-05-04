@@ -1,0 +1,5 @@
+C:\Projetos\SRSA_MOCKUP\BANCO\bin\Release\BANCO.dll.config
+C:\Projetos\SRSA_MOCKUP\BANCO\bin\Release\BANCO.dll
+C:\Projetos\SRSA_MOCKUP\BANCO\bin\Release\BANCO.pdb
+C:\Projetos\SRSA_MOCKUP\BANCO\obj\Release\BANCO.dll
+C:\Projetos\SRSA_MOCKUP\BANCO\obj\Release\BANCO.pdb

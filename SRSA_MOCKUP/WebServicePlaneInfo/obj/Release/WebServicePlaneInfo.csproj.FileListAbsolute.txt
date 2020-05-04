@@ -1,0 +1,15 @@
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\WebServicePlaneInfo.dll
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\WebServicePlaneInfo.pdb
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\BANCO.dll
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\BANCO.pdb
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\obj\Release\WebServicePlaneInfo.dll
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\obj\Release\WebServicePlaneInfo.pdb
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\CaptureCam.dll
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\Entity.dll
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\Entity.pdb
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\CaptureCam.pdb
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\SHAREDCLASSES.dll
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\bin\SHAREDCLASSES.pdb
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\obj\Release\WebServicePlaneInfo.csprojResolveAssemblyReference.cache
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\obj\Release\WebServicePlaneInfo.Properties.Resources.resources
+C:\Projetos\SRSA_MOCKUP\WebServicePlaneInfo\obj\Release\WebServicePlaneInfo.csproj.GenerateResource.Cache

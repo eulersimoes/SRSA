@@ -1,0 +1,4 @@
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VBAR\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VBAR\obj\x86\Debug\VBAR.Resources.resources
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VBAR\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Documents and Settings\x4n8\meus documentos\visual studio 2010\Projects\SRSA_MOCKUP\VBAR\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog

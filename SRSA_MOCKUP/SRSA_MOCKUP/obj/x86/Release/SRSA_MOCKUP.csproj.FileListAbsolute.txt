@@ -1,0 +1,16 @@
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Release\SRSA_MOCKUP.exe
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Release\SRSA_MOCKUP.pdb
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Release\CaptureCam.dll
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Release\CaptureCam.pdb
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.Form1.resources
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.FormSerialPort.resources
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.Properties.Resources.resources
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.exe
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.pdb
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Release\SRSA_MOCKUP.exe.manifest
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\bin\Release\SRSA_MOCKUP.application
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.exe.manifest
+D:\Projetos\SRSA_MOCKUP\SRSA_MOCKUP\obj\x86\Release\SRSA_MOCKUP.application

@@ -1,0 +1,4 @@
+C:\Projetos\SRSA_MOCKUP\Entity\bin\Release\Entity.dll
+C:\Projetos\SRSA_MOCKUP\Entity\bin\Release\Entity.pdb
+C:\Projetos\SRSA_MOCKUP\Entity\obj\Release\Entity.dll
+C:\Projetos\SRSA_MOCKUP\Entity\obj\Release\Entity.pdb

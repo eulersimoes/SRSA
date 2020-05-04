@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\planeInfo" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="09/02/2012 20:43:02" />
+    <file relUrl="bin/Entity.pdb" publishTime="09/02/2012 20:42:51" />
+    <file relUrl="bin/Entity.dll" publishTime="09/02/2012 20:42:51" />
+    <file relUrl="bin/CaptureCam.dll" publishTime="12/08/2011 01:44:55" />
+    <file relUrl="bin/CaptureCam.pdb" publishTime="12/08/2011 01:44:55" />
+    <file relUrl="bin/BANCO.dll" publishTime="09/02/2012 20:42:52" />
+    <file relUrl="bin/BANCO.pdb" publishTime="09/02/2012 20:42:52" />
+    <file relUrl="bin/SHAREDCLASSES.pdb" publishTime="09/03/2012 00:34:37" />
+    <file relUrl="bin/WebServicePlaneInfo.dll" publishTime="09/20/2012 23:07:06" />
+    <file relUrl="PlaneInfo.asmx" publishTime="05/06/2012 23:17:09" />
+    <file relUrl="bin/WebServicePlaneInfo.pdb" publishTime="09/20/2012 23:07:06" />
+    <file relUrl="bin/SHAREDCLASSES.dll" publishTime="09/03/2012 00:34:37" />
+  </publishProfile>
+</publishData>

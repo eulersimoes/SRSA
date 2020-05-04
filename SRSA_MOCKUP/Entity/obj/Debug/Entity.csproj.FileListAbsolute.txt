@@ -1,0 +1,10 @@
+D:\Projetos\SRSA_MOCKUP\Entity\bin\Debug\Entity.dll
+D:\Projetos\SRSA_MOCKUP\Entity\bin\Debug\Entity.pdb
+D:\Projetos\SRSA_MOCKUP\Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\Projetos\SRSA_MOCKUP\Entity\obj\Debug\Entity.dll
+D:\Projetos\SRSA_MOCKUP\Entity\obj\Debug\Entity.pdb
+C:\Projetos\SRSA_MOCKUP\Entity\bin\Debug\Entity.dll
+C:\Projetos\SRSA_MOCKUP\Entity\bin\Debug\Entity.pdb
+C:\Projetos\SRSA_MOCKUP\Entity\obj\Debug\Entity.dll
+C:\Projetos\SRSA_MOCKUP\Entity\obj\Debug\Entity.pdb
+C:\Projetos\SRSA_MOCKUP\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

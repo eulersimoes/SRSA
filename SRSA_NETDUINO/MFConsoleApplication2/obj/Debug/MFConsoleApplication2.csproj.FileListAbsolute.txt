@@ -1,0 +1,7 @@
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\MFConsoleApplication2.Resources.resources
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\GenerateResource.read.1.tlog
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\GenerateResource.write.1.tlog
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\MFConsoleApplication2.Resources.tinyresources
+C:\Projetos\LocalizacaoExata\MFConsoleApplicationTeste\MFConsoleApplication2\obj\Debug\TinyResGen.cache

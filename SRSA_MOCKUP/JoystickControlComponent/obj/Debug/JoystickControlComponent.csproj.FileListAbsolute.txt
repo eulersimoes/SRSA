@@ -1,0 +1,17 @@
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\ResolveAssemblyReference.cache
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.JoyControl.resources
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\GenerateResource.read.1.tlog
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\GenerateResource.write.1.tlog
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.dll
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.pdb
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Debug\JoystickControlComponent.dll
+D:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Debug\JoystickControlComponent.pdb
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Debug\JoystickControlComponent.dll
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Debug\JoystickControlComponent.pdb
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\bin\Debug\Microsoft.Xna.Framework.xml
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.JoyControl.resources
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.csproj.GenerateResource.Cache
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.dll
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.pdb
+C:\Projetos\SRSA_MOCKUP\JoystickControlComponent\obj\Debug\JoystickControlComponent.csprojResolveAssemblyReference.cache
